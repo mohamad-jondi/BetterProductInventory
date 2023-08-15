@@ -9,6 +9,8 @@ obj/
 *.suo
 *.user
 
+*.sln
+*.csproj
 
 packages/
 
