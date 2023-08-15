@@ -2,12 +2,10 @@
 namespace BetterProductInventory
 {
     public class ConsoleVirtualGUI
-    {
-        
+    { 
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to this Mangment System, please choose what you want to do!");
-
             while (true)
             {
                 Console.WriteLine("1.Add a New Product");
@@ -16,21 +14,17 @@ namespace BetterProductInventory
                 Console.WriteLine("4.Delete a Product");
                 Console.WriteLine("5.Search For a Product");
                 Console.WriteLine("6.Close");
-                int Choice = Convert.ToInt32(Console.ReadLine());
-
-                switch (Choice)
+                int.TryParse(Console.ReadLine(), out var choice);
+                switch (choice)
                 {
                     case 1:
                         Console.WriteLine("adding new product");
                         break;
                     case 2:
-
                         Console.WriteLine("Viewing All Existing Products");
-                       
                         break;
                     case 3:
                         Console.WriteLine("Edit an Existing Product");
-                       
                         break;
                     case 4:
                         Console.WriteLine("4.Delete a Product");
@@ -41,13 +35,8 @@ namespace BetterProductInventory
                     case 6:
                         Console.WriteLine("6.Close");
                         break;
-
-
-
                 }
-
             }
-
         }
     }
 }
